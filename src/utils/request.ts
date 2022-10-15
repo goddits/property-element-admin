@@ -14,7 +14,7 @@ interface ResultData<T = any> extends Result {
   data?: T;
 }
 
-const URL: string = ''
+const URL: string = 'http://localhost:8888'
 
 //枚举
 enum RequestEnums {
@@ -113,7 +113,7 @@ class RequestHttp {
 
   // 常用方法封装
   get<T>(url: string, params?: object): Promise<ResultData<T>> {
-    return this.service.get(url, {params});
+    return this.service.get(url, { params });
   }
   post<T>(url: string, params?: object): Promise<ResultData<T>> {
     return this.service.post(url, params);
@@ -122,7 +122,7 @@ class RequestHttp {
     return this.service.put(url, params);
   }
   delete<T>(url: string, params?: object): Promise<ResultData<T>> {
-    return this.service.delete(url, {params});
+    return this.service.delete(url, { params });
   }
 }
 
