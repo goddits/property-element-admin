@@ -3,5 +3,8 @@
 </template>
 
 <style lang="scss">
-@import "@/assets/styles/main.scss"
+*{
+  padding: 0;
+  margin: 0;
+}
 </style>

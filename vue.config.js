@@ -32,12 +32,4 @@ module.exports = {
       }),
     ],
   },
-  css: {
-    // css预设器配置项
-    loaderOptions: {
-      scss:{ 
-        prependData: `@import "@/assets/styles/main.scss";`//主入口css文件路径
-      }
-    }
-  }
 }

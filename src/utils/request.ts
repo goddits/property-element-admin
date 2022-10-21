@@ -14,7 +14,7 @@ interface ResultData<T = any> extends Result {
   data?: T;
 }
 
-const URL: string = 'http://localhost:8888'
+const URL: string = process.env.VUE_APP_SERVER_BASEURL
 
 //枚举
 enum RequestEnums {
